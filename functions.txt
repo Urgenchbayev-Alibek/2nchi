@@ -1,0 +1,13 @@
+son=int(input("Enter the son number:"))
+teskari_son=0
+real_son=son
+
+while son>0:
+    qoldiq=son%10
+    teskari_son=teskari_son*10+qoldiq
+    son=son//10
+if teskari_son==real_son:
+    print("Polindrom")
+else:
+    print("Polindrom emas")
+bu polindrom sonlarni tekshiruvchi funksiya
