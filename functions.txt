@@ -11,3 +11,30 @@ if teskari_son==real_son:
 else:
     print("Polindrom emas")
 bu polindrom sonlarni tekshiruvchi funksiya
+
+2)#include <stdio.h>
+
+void Bubble_sort() {
+    int a[5] = {5, 4, 3, 2, 1};
+    int n = 5;
+    for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < n-i-1; ++j) {
+            if (a[j] > a[j+1]) {
+                int temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+            }
+        }
+    }
+    printf("Sortlandi:\n");
+    for (int i = 0; i < n; ++i) {
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    Bubble_sort();
+    return 0;
+}
+bubble sort funksiyasi
