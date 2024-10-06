@@ -38,3 +38,22 @@ int main() {
     return 0;
 }
 bubble sort funksiyasi
+
+
+3)def fibonacci_son(n):
+     if n <= 0:
+         return []
+     elif n == 1:
+         return [0]
+     elif n == 2:
+         return [0, 1]
+     else:
+         fib_son = fibonacci_son(n - 1)
+         fib_son.append(fib_son[-1] + fib_son[-2])
+         return fib_son
+
+ t = int(input("Fibonacci sonlarining sonini kiriting: "))
+
+ result = fibonacci_son(t)
+ print(f"Result: {result}")
+Fibonacci sonlari
