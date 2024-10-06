@@ -57,3 +57,16 @@ bubble sort funksiyasi
  result = fibonacci_son(t)
  print(f"Result: {result}")
 Fibonacci sonlari
+
+
+4)def anything(a):
+    if type(a)==int:
+        return a*2
+    elif type(a)==str:
+        return a.upper()
+    else:
+        return a
+
+a=anything('matn')
+print(a)
+ bir funksiyada ishqilib😁
